@@ -4,10 +4,8 @@ import 'package:http/http.dart' as http;
 import '../models/weather_model.dart';
 
 class WeatherService {
-  // Simpan API key di tempat yang aman jika untuk produksi
   static const String _apiKey = '8e4988ea2b2b89d198066ccdce66eee0';
 
-  // Mendapatkan cuaca berdasarkan koordinat
   static Future<WeatherModel?> getWeather({
     required double lat,
     required double lon,
@@ -29,7 +27,6 @@ class WeatherService {
     return null;
   }
 
-  // Mendapatkan cuaca berdasarkan nama kota
   static Future<WeatherModel?> fetchWeather(String city) async {
     final url = Uri.parse(
         'https://api.openweathermap.org/data/2.5/weather?q=$city&units=metric&appid=$_apiKey');

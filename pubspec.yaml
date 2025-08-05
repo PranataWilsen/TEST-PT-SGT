@@ -14,6 +14,7 @@ dependencies:
   http: ^1.4.0
   geolocator: ^10.1.0
   intl: ^0.18.1
+  geocoding: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -23,6 +24,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-# flutter:
-#   assets:
-#     - assets/images/home.png
+  assets:
+    - assets/images/home.png
+    - assets/images/house.png
+    - assets/images/box.png
+    - assets/images/tab.png
